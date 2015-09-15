@@ -1,7 +1,11 @@
 Rails.application.routes.draw do
   devise_for :users
+  resources :users
   resources :profiles, only: [:edit]
+
   get 'home/index'
+  patch 'home/index', controller: 'user', action: 'update'
+
   root 'home#index'
 
   # The priority is based upon order of creation: first created -> highest priority.
