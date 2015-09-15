@@ -3,7 +3,12 @@
   Logged in as <strong><%= current_user.email %></strong>.
 
   <h3>シリアルコード入力</h3>
-  <%= link_to "input serial", edit_profile_path %>
+  <%= form_for @user do |f| %>
+    <%= f.fields_for @user.profile do |fp| %>
+      <%= fp.text_field :serial_code %>
+      <%= f.submit %>
+    <% end %>
+  <% end %>
 
   <h3>過去の握手履歴一覧</h3>
   <ui>
