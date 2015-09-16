@@ -40,6 +40,10 @@ gem 'devise-i18n-views'
 
 gem 'barby'
 gem 'chunky_png'
+gem 'rqrcode'
+gem 'rqrcode_png'
+
+gem 'sinatra'
 
 group :development, :test do
   # Call 'byebug' anywhere in the code to stop execution and get a debugger console

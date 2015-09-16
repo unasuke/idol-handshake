@@ -1,10 +1,13 @@
 Rails.application.routes.draw do
   devise_for :users
+
   resources :users
-  resources :profiles, only: [:edit]
+  resources :profiles
 
   get 'home/index'
   patch 'home/index', controller: 'user', action: 'update'
+  get 'home/qrcode'
+  patch 'home/qrcode', controller: 'user'
 
   root 'home#index'
 
