@@ -1,6 +1,6 @@
 class DevelopController < ApplicationController
 
-    def develop
+    def count_select
         @user = current_user
     end
 

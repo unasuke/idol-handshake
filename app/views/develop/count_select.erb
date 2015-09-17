@@ -1,0 +1,9 @@
+<h1>count_select</h1>
+<%= form_for @user do |f| %>
+  <%= f.fields_for @user.profile do |fp| %>
+    <%= fp.text_field :prev_handshake_all %>
+    <%= f.submit %>
+  <% end %>
+<% end %>
+
+<ul><%= link_to "[HOME]", home_index_path%><ul>

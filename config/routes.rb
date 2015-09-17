@@ -5,16 +5,16 @@ Rails.application.routes.draw do
   resources :profiles
 
   get 'home/index'
-  patch 'home/index', controller: 'user', action: 'update'
+  patch 'home/index', controller: 'user'
   get 'home/qrcode'
   patch 'home/qrcode', controller: 'user'
   get 'home/input_serial'
-  patch 'home/input_serial', controller: 'user'
+  patch 'home/input_serial', controller: 'user', action: 'update'
   get 'home/handshake'
   patch 'home/handshake', controller: 'user'
 
-  get 'develop/count_select', controller: 'user'
-  patch 'develop/count_select'
+  get 'develop/count_select'
+  patch 'develop/count_select', controller: 'user', action: 'update_count'
 
   root 'home#index'
 
