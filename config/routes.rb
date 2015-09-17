@@ -8,6 +8,13 @@ Rails.application.routes.draw do
   patch 'home/index', controller: 'user', action: 'update'
   get 'home/qrcode'
   patch 'home/qrcode', controller: 'user'
+  get 'home/input_serial'
+  patch 'home/input_serial', controller: 'user'
+  get 'home/handshake'
+  patch 'home/handshake', controller: 'user'
+
+  get 'develop/count_select', controller: 'user'
+  patch 'develop/count_select'
 
   root 'home#index'
 

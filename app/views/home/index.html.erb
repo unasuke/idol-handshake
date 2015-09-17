@@ -3,29 +3,13 @@
   Logged in as <strong><%= current_user.email %></strong>.
 
   <h3>シリアルコード入力</h3>
-  <%= form_for @user do |f| %>
-    <%= f.fields_for @user.profile do |fp| %>
-      <%= fp.text_field :serial_code %>
-      <%= f.submit %>
-    <% end %>
-  <% end %>
+  <%= link_to "[シリアルコード入力]", home_input_serial_path%>
 
   <h3>バーコード</h3>
   <%= link_to "[QRコード表示]", home_qrcode_path%>
 
   <h3>過去の握手履歴一覧</h3>
-  <ui>
-    <li>all <%= current_user.profile.prev_handshake_all %></li>
-    <li>honoka <%= current_user.profile.prev_handshake_all %></li>
-    <li>kotori <%= current_user.profile.prev_handshake_kotori %></li>
-    <li>umi <%= current_user.profile.prev_handshake_umi %></li>
-    <li>hanayo <%= current_user.profile.prev_handshake_hanayo %></li>
-    <li>rin <%= current_user.profile.prev_handshake_rin %></li>
-    <li>maki <%= current_user.profile.prev_handshake_maki %></li>
-    <li>eri <%= current_user.profile.prev_handshake_eri %></li>
-    <li>nozomi <%= current_user.profile.prev_handshake_nozomi %></li>
-    <li>nico <%= current_user.profile.prev_handshake_nico %></li>
-  <ui>
+  <%= link_to "[握手履歴一覧]", home_handshake_path%></br>
 
   <%= link_to "Settings", edit_user_registration_path, :class => "navbar-link" %> |
   <%= link_to "Logout", destroy_user_session_path, method: :delete, :class => "navbar-link" %>
