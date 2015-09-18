@@ -45,9 +45,19 @@ class HomeController < ApplicationController
         @profile = @user.profile
     end
 
-    def handhake
+    def handshake
         @user = current_user
         @profile = @user.profile
+        @chart_all      =  @profile.prev_handshake_all
+        @chart_honoka   =  @profile.prev_handshake_honoka
+        @chart_kotori   =  @profile.prev_handshake_kotori
+        @chart_umi      =  @profile.prev_handshake_umi
+        @chart_hanayo   =  @profile.prev_handshake_hanayo
+        @chart_rin      =  @profile.prev_handshake_rin
+        @chart_maki     =  @profile.prev_handshake_maki
+        @chart_eri      =  @profile.prev_handshake_eri
+        @chart_nozomi   =  @profile.prev_handshake_nozomi
+        @chart_nico     =  @profile.prev_handshake_nico
     end
 
 end

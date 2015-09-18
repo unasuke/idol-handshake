@@ -4,13 +4,7 @@ source 'https://rubygems.org'
 # Bundle edge Rails instead: gem 'rails', github: 'rails/rails'
 gem 'rails', '4.2.4'
 # Use sqlite3 as the database for Active Record
-group :development do
-  gem 'sqlite3'
-end
-group :production do
-  gem 'pg'
-  gem 'rails_12factor'
-end
+# gem 'sqlite3'
 # Use SCSS for stylesheets
 gem 'sass-rails', '~> 5.0'
 # Use Uglifier as compressor for JavaScript assets
@@ -43,13 +37,19 @@ gem 'rails_admin'
 gem 'devise-bootstrap-views'
 gem 'devise-i18n'
 gem 'devise-i18n-views'
-
 gem 'barby'
 gem 'chunky_png'
 gem 'rqrcode'
 gem 'rqrcode_png'
-
 gem 'sinatra'
+gem "chartkick"
+group :development do
+  gem 'sqlite3'
+end
+group :production do
+  gem 'pg'
+  gem 'rails_12factor'
+end
 
 group :development, :test do
   # Call 'byebug' anywhere in the code to stop execution and get a debugger console
