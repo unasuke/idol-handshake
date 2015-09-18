@@ -1,5 +1,5 @@
 .wrapper{
-  background:#ddd;
+  background:#e6e6e6;
   width: 700px;
   height: 650px;
   margin: 0 auto;
@@ -10,7 +10,7 @@
 
 h1{
   height:60px;
-  background:#dda;
+  background:#e5e28c;
   border-top-left-radius:20px;
   border-top-right-radius:20px;
   -webkit-border-top-left-radius:20px;

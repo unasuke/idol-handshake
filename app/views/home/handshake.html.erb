@@ -1,3 +1,13 @@
+<html>
+<head>
+  <title>IdolHandshake</title>
+  <%= stylesheet_link_tag    'rireki', media: 'all', 'data-turbolinks-track' => true %>
+  <%= javascript_include_tag 'application', 'data-turbolinks-track' => true %>
+  <%= csrf_meta_tags %>
+</head>
+<body>
+<div class="wrapper">
+
 <h1>過去の参加履歴</h1>
 <div>
     <%= column_chart [
@@ -10,10 +20,17 @@
         {name: "maki",   data: {"" => @chart_maki}},
         {name: "eri",    data: {"" => @chart_eri}},
         {name: "nozomi", data: {"" => @chart_nozomi}},
-        {name: "nico",   data: {"" => @chart_nico}},
-    ],colors: [
-        "#e58e8c", "#ffce8d", "#bebcc9", "#7bd3ff", "#fcff7d",
-        "#5fffa7", "#ffc9c2", "#ffc5f7", "#cfa6ff", "#c0fffd"
-    ],height: "600px" %>
+        {name: "nico",   data: {"" => @chart_nico}}
+        ],colors: [
+            "#e58e8c", "#ffce8d", "#bebcc9", "#7bd3ff", "#fcff7d",
+            "#5fffa7", "#ffc9c2", "#ffc5f7", "#cfa6ff", "#c0fffd"
+        ],height: "600px"
+    %>
 </div>
-<ul><%= link_to "[HOME]", home_index_path%><ul>
+
+<div id="btn--area">
+<%= link_to image_tag("back.png"), home_index_path, :class=>"backBtn"%>
+</div>
+</div>
+</body>
+</html>

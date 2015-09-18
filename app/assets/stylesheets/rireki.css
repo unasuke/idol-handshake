@@ -1,0 +1,22 @@
+.wrapper{
+  background:#fff;
+  width: 700px;
+  height: 650px;
+  margin: 0 auto;
+  margin-top: 50px;
+  margin-bottom: 50px;
+  border-radius:20px;
+}
+
+h1{
+  height:60px;
+  background:#dda;
+  color:#fff;
+  line-height:60px;
+  border-radius:20px;
+}
+
+img{
+width:195px;
+height:76px;
+}
