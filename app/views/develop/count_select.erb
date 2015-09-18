@@ -1,9 +1,9 @@
 <h1>count_select</h1>
-<%= form_for @user do |f| %>
-  <%= f.fields_for @user.profile do |fp| %>
-    <%= fp.text_field :prev_handshake_all %>
-    <%= f.submit %>
-  <% end %>
+<%= form_for @profile,  :url => {:controller => :profiles, :action => :update_prev_handshake_all} do |f| %>
+<p>
+    <%= f.label :prev_handshake_all %><br>
+    <%= f.text_field :prev_handshake_all %>
+    <%= f.submit("develop") %>
 <% end %>
 
 <ul><%= link_to "[HOME]", home_index_path%><ul>

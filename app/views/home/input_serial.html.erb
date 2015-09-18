@@ -1,9 +1,9 @@
 <h1>シリアルコード入力</h1>
-<%= form_for @user do |f| %>
-  <%= f.fields_for @user.profile do |fp| %>
-    <%= fp.text_field :serial_code %>
+<%= form_for @profile,  :url => {:controller => :profiles, :action => :update_serial} do |f| %>
+<p>
+    <%= f.label :serial_code %><br>
+    <%= f.text_field :serial_code %>
     <%= f.submit %>
-  <% end %>
 <% end %>
 
 <ul><%= link_to "[HOME]", home_index_path%><ul>
