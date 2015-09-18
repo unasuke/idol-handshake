@@ -4,7 +4,7 @@ class ProfilesController < ApplicationController
         @user = current_user
         @profile = @user.profile
         if @profile.update(serial_params)
-            redirect_to root_path
+            redirect_to home_qrcode_path
         end
     end
 

@@ -1,8 +1,11 @@
 .wrapper{
-  width: 600px;
+  background:#fff;
+  width: 700px;
   margin: 0 auto;
 }
-
+body{
+  background:#fff;
+}
 p{
   margin-bottom: 15px;
   text-align: center;
@@ -13,24 +16,30 @@ clear:both;
 }
 
 #bottom__btn--area{
+background:#fff;
 height:70px;
 margin-top:15px;
 border-radius:15px;
-border:2px solid #000;
+border:2px solid #666;
 }
 
 #log{
-font-size:1.3em;
+background:#fff;
+font-size:1.4em;
 margin:0 auto;
 text-align:center;
+height:65px;
+line-height:65px;
+text-decoration:none;
+color:#444;
 }
 
 #top__btn--area .left{
 border-radius: 15px;
 background: #bbb;
 float:left;
-width:295px;
-height:461px;
+width:343px;
+height:536px;
 font-size: 3em;
 color: #fff;
 text-decoration:none;
@@ -41,9 +50,9 @@ text-decoration:none;
 border-radius: 15px;
 background: #bbb;
 float:left;
-margin-left:10px;
-width:295px;
-height:461px;
+margin-left:14px;
+width:343px;
+height:536px;
 font-size: 3em;
 color: #fff;
 text-decoration:none;
