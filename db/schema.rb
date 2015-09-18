@@ -17,7 +17,7 @@ ActiveRecord::Schema.define(version: 20150915090501) do
     t.integer  "user_id"
     t.datetime "created_at",                         null: false
     t.datetime "updated_at",                         null: false
-    t.integer  "prev_handshake_all",    default: 0
+    t.integer  "prev_handshake_all",    default: 1
     t.integer  "prev_handshake_honoka", default: 0
     t.integer  "prev_handshake_kotori", default: 0
     t.integer  "prev_handshake_umi",    default: 0
