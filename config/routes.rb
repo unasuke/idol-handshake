@@ -4,19 +4,21 @@ Rails.application.routes.draw do
   resources :users
   resources :profiles
 
-  patch 'profiles/:id', controller:'profiles', action: 'count_update'
-
   get 'home/index'
   patch 'home/index', controller: 'user'
-
   get 'home/qrcode'
-  get 'home/handshake'
-
+  patch 'home/qrcode', controller: 'user'
   get 'home/input_serial'
-  patch 'home/input_serial', controller: 'profiles', action: 'update_serial'
+  patch 'home/input_serial', controller: 'user', action: 'update'
+  get 'home/handshake'
+  patch 'home/handshake', controller: 'user'
 
   get 'develop/count_select'
+<<<<<<< HEAD
   patch 'develop/count_select', controller: 'profiles', action: 'update_prev_handshake'
+=======
+  patch 'develop/count_select', controller: 'user', action: 'update_count'
+>>>>>>> parent of a120b5d... ぼるこふにわたすよ
 
   root 'home#index'
 
