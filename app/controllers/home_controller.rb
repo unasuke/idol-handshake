@@ -37,6 +37,11 @@ class HomeController < ApplicationController
         @profile = @user.profile
     end
 
+    def input_prev_count
+        @user = current_user
+        @profile = @user.profile
+    end
+
     def handhake
         @user = current_user
         @profile = @user.profile
