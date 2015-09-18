@@ -5,7 +5,7 @@ class CreateProfiles < ActiveRecord::Migration
 
       t.timestamps null: false
 
-      t.integer  :prev_handshake_all, default: 0
+      t.integer  :prev_handshake_all, default: 1
       t.integer  :prev_handshake_honoka, default: 0
       t.integer  :prev_handshake_kotori, default: 0
       t.integer  :prev_handshake_umi, default: 0
