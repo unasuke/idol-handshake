@@ -16,7 +16,7 @@ Rails.application.routes.draw do
   patch 'home/input_serial', controller: 'profiles', action: 'update_serial'
 
   get 'develop/count_select'
-  patch 'develop/count_select', controller: 'profiles', action: 'update_prev_handshake_all'
+  patch 'develop/count_select', controller: 'profiles', action: 'update_prev_handshake'
 
   root 'home#index'
 
