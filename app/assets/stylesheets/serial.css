@@ -1,0 +1,63 @@
+.wrapper{
+  background:#ddd;
+  width: 700px;
+  height: 500px;
+  margin: 0 auto;
+  margin-top: 50px;
+  border-radius:20px;
+}
+
+h1{
+  height:60px;
+  background:#daa;
+  border-top-left-radius:20px;
+  border-top-right-radius:20px;
+  -webkit-border-top-left-radius:20px;
+  -webkit-border-top-right-radius:20px;
+  -moz-border-radius-topleft:20px;
+  -moz-border-radius-topright:20px;
+  color:#fff;
+  line-height:60px;
+}
+
+.info{
+letter-spacing:1.2px;
+font-size:140%;
+margin:35px;
+}
+
+.inputField{
+  width:500px;
+  height:50px;
+  font-size:1.5em;
+}
+
+input[name="commit"]{
+border-radius:13px;
+margin-top:25px;
+width:195px;
+height:76px;
+font-size:0px;
+background-image: url("gogogogo.png");
+background-size: contain;
+}
+
+#btn--area{
+margin-top:20px;
+border-radius:13px;
+width:195px;
+height:76px;
+background:#f00;
+}
+
+#btn--area .backBtn{
+margin-top:20px;
+border-radius:13px;
+width:195px;
+height:76px;
+}
+
+img{
+width:195px;
+height:76px;
+}

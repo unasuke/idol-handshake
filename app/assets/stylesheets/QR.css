@@ -1,0 +1,33 @@
+.wrapper{
+  background:#ddd;
+  width: 700px;
+  height: 650px;
+  margin: 0 auto;
+  margin-top: 50px;
+  margin-bottom: 50px;
+  border-radius:20px;
+}
+
+h1{
+  height:60px;
+  background:#dda;
+  border-top-left-radius:20px;
+  border-top-right-radius:20px;
+  -webkit-border-top-left-radius:20px;
+  -webkit-border-top-right-radius:20px;
+  -moz-border-radius-topleft:20px;
+  -moz-border-radius-topright:20px;
+  color:#fff;
+  line-height:60px;
+}
+
+img{
+width:195px;
+height:76px;
+}
+
+.QR{
+width:400px;
+height:400px;
+margin:40px;
+}

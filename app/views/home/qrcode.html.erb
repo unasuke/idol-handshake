@@ -1,3 +1,22 @@
+<html>
+<head>
+  <title>IdolHandshake</title>
+  <%= stylesheet_link_tag    'QR', media: 'all', 'data-turbolinks-track' => true %>
+  <%= javascript_include_tag 'application', 'data-turbolinks-track' => true %>
+  <%= csrf_meta_tags %>
+</head>
+<body>
+
+<div class="wrapper">
+
 <h1>QRcode</h1>
-<%= image_tag src = @qrsrc %>
-<ul><%= link_to "[HOME]", home_index_path%><ul>
+<%= image_tag src = @qrsrc ,:class=>"QR"%>
+
+<div id="btn--area">
+<%= link_to image_tag("back.png"), home_index_path, :class=>"backBtn"%>
+</div>
+
+</div>
+
+</body>
+</html>

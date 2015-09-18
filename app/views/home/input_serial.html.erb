@@ -1,9 +1,23 @@
-<h1>シリアルコード入力</h1>
+<html>
+<head>
+  <title>IdolHandshake</title>
+  <%= stylesheet_link_tag    'serial', media: 'all', 'data-turbolinks-track' => true %>
+  <%= javascript_include_tag 'application', 'data-turbolinks-track' => true %>
+  <%= csrf_meta_tags %>
+</head>
+<body>
+<div class="wrapper">
+<h1>シリアルコード</h1>
+<p class="info">お手持ちの特典会参加券に記入されている<br>
+１３ケタの番号をご入力ください</p>
 <%= form_for @profile,  :url => {:controller => :profiles, :action => :update_serial} do |f| %>
 <p>
-    <%= f.label :serial_code %><br>
-    <%= f.text_field :serial_code %>
-    <%= f.submit %>
+    <%= f.text_field :serial_code ,:placeholder => "シリアルコードを入力",:class => "inputField"%><br>
+<%= f.submit%>
 <% end %>
 
-<ul><%= link_to "[HOME]", home_index_path%><ul>
+<div id="btn--area">
+<%= link_to image_tag("back.png"), home_index_path, :class=>"backBtn"%>
+</div>
+</body>
+</html>

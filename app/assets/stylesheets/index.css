@@ -17,7 +17,7 @@ clear:both;
 
 #bottom__btn--area{
 background:#fff;
-height:70px;
+height:75px;
 margin-top:15px;
 border-radius:15px;
 border:2px solid #666;
@@ -25,11 +25,11 @@ border:2px solid #666;
 
 #log{
 background:#fff;
-font-size:1.4em;
+font-size:1.66em;
 margin:0 auto;
 text-align:center;
-height:65px;
-line-height:65px;
+height:72px;
+line-height:72px;
 text-decoration:none;
 color:#444;
 }
@@ -67,6 +67,12 @@ width:160px;
 img{
 width:100%;
 height:100%;
+}
+
+img[alt="defendImg"]{
+margin:0 auto;
+margin-top:40px;
+margin-bottom:40px;
 }
 
 .cf:before,

@@ -8,9 +8,8 @@
 <body>
 <div class="wrapper">
 <%# <h1>Home#index</h1> %>
-<%= image_tag "defend.png", :size => "600x94", :alt => "defendImg" %>
+<%= image_tag "logo2.png", :size => "600x94", :alt => "defendImg" %>
 <% if user_signed_in? %>
-  <p>Logged in as <strong><%= current_user.email %></strong>.</p>
 
   <div id="top__btn--area" class="cf">
   <%# <h3>シリアルコード入力</h3> %>
@@ -35,7 +34,7 @@
   <%= link_to "Sign up", new_user_registration_path, :class => 'navbar-link' %> |
   <%= link_to "Login", new_user_session_path, :class => 'navbar-link' %>
 <% end %>
-<p>Find me in app/views/home/index.html.erb</p>
+<%# <p>Find me in app/views/home/index.html.erb</p> %>
 </div>
 </body>
 </html>
