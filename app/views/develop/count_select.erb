@@ -1,5 +1,4 @@
 <h1>count_select</h1>
-<<<<<<< HEAD
 <%= form_for @profile,  :url => {:controller => :profiles, :action => :update_prev_handshake} do |f| %>
 <p>
     <%= f.label :prev_handshake_all %>
@@ -32,13 +31,6 @@
     <%= f.label :prev_handshake_nico %>
     <%= f.text_field :prev_handshake_nico %><br>
     <%= f.submit("develop") %>
-=======
-<%= form_for @user do |f| %>
-  <%= f.fields_for @user.profile do |fp| %>
-    <%= fp.text_field :prev_handshake_all %>
-    <%= f.submit %>
-  <% end %>
->>>>>>> parent of a120b5d... ぼるこふにわたすよ
 <% end %>
 
 <ul><%= link_to "[HOME]", home_index_path%><ul>

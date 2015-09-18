@@ -1,5 +1,4 @@
 class ProfilesController < ApplicationController
-<<<<<<< HEAD
 
     def update_serial
         @user = current_user
@@ -71,6 +70,4 @@ class ProfilesController < ApplicationController
             params.require(:profile).permit(:prev_handshake_nozomi)
         end
 
-=======
->>>>>>> parent of a120b5d... ぼるこふにわたすよ
 end
