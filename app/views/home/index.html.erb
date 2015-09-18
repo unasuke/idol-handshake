@@ -1,20 +1,41 @@
-<h1>Home#index</h1>
+<html>
+<head>
+  <title>IdolHandshake</title>
+  <%= stylesheet_link_tag    'index', media: 'all', 'data-turbolinks-track' => true %>
+  <%= javascript_include_tag 'application', 'data-turbolinks-track' => true %>
+  <%= csrf_meta_tags %>
+</head>
+<body>
+<div class="wrapper">
+<%# <h1>Home#index</h1> %>
+<%= image_tag "defend.png", :size => "600x94", :alt => "defendImg" %>
 <% if user_signed_in? %>
-  Logged in as <strong><%= current_user.email %></strong>.
+  <p>Logged in as <strong><%= current_user.email %></strong>.</p>
 
-  <h3>シリアルコード入力</h3>
-  <%= link_to "[シリアルコード入力]", home_input_serial_path%>
+  <div id="top__btn--area" class="cf">
+  <%# <h3>シリアルコード入力</h3> %>
+  <%= link_to image_tag("serial_btn.png"), home_input_serial_path, :class => "left" %>
 
-  <h3>バーコード</h3>
-  <%= link_to "[QRコード表示]", home_qrcode_path%>
+  <%# <h3>バーコード</h3> %>
+  <%= link_to image_tag("QR_btn.png"), home_qrcode_path, :class => "right" %>
+  </div>
 
-  <h3>過去の握手履歴一覧</h3>
-  <%= link_to "[握手履歴一覧]", home_handshake_path%></br>
+  <div id="bottom__btn--area">
+  <%# <h3>過去の握手履歴一覧</h3> %>
+  <%= link_to "･･･→　過去の参加履歴はこちらから", home_handshake_path, :id=>"log" %>
+  </div>
   <%= link_to "[develop]", home_input_prev_count_path%>
+  </div>
 
+  <div id="links">
   <%= link_to "Settings", edit_user_registration_path, :class => "navbar-link" %> |
   <%= link_to "Logout", destroy_user_session_path, method: :delete, :class => "navbar-link" %>
+  </div>
 <% else %>
   <%= link_to "Sign up", new_user_registration_path, :class => 'navbar-link' %> |
   <%= link_to "Login", new_user_session_path, :class => 'navbar-link' %>
 <% end %>
+<p>Find me in app/views/home/index.html.erb</p>
+</div>
+</body>
+</html>
