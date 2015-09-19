@@ -6,3 +6,11 @@ font-size:115%;
 margin-bottom:10px;
 }
 
+input{
+background:#fff;
+border-radius:10px;
+}
+
+field{
+font-size:1.8em;
+}
